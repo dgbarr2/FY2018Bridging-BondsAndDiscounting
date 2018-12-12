@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Foundation Year: CSS Grid Website Layout</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+      <style>
+
+
+
+          .main text {
+          font: 10px sans-serif;	
+          }
+          
+          .axis line, .axis path {
+          shape-rendering: crispEdges;
+          stroke: black;
+          fill: none;
+          stroke-width: 2;
+          }
+          
+          circle {
+          fill: #333;
+          }
+          
+          .legend rect {
+          fill:white;
+          stroke:black;
+          opacity:0.8;
+          font: 12px sans-serif;
+          }
+          
+          </style>
+          <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  
+</head>
+
+<body>
+
+  <!-- Header Showcase -->
+<header id="showcase" class="grid">
+  <div class="bg-image"></div>
+  <div class="content-wrap">
+    <h1>Welcome to Foundation Year Bridging: Asset Pricing</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci eum error earum soluta voluptatum nisi laboriosam eos saepe asperiores dolorum.</p>
+    <a href="#section-b" class="btn">Read More</a>
+  </div>
+</header>
+
+<!-- Main Area -->
+<main id="main">
+  <!-- Section A -->
+  <section id="section-a" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">Curves and Differentiation</h2>
+      <div class="content-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi
+          animi totam, accusantium, ex eius quia, natus quo?</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Section B -->
+  
+  <section id="section-b" class="grid">
+    <ul>
+      <li>
+        <div class="card">
+          <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">Linear equations</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">Quadratics</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">A little integration</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+<!-- Section A2 -->
+<section id="section-a2" class="grid">
+  <div class="content-wrap">
+    <h2 class="content-title">Making money on the yield curve.</h2>
+    <div class="content-text">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi
+        animi totam, accusantium, ex eius quia, natus quo?</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section B2 -->
+
+<section id="section-b" class="grid">
+  <ul>
+    <li>
+      <div class="card">
+        <img src="https://static.pexels.com/photos/164527/pexels-photo-164527.jpeg" alt="">
+        <div class="card-content">
+          <h3 class="card-title">Curve shifts</h3>
+          <p>The curve may change shape, twist or move in parallel to its starting position. The trick is in knowing how to bet on each one of these without having to take risks with the other two.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <img src="https://static.pexels.com/photos/210607/pexels-photo-210607.jpeg" alt="">
+        <div class="card-content">
+          <h3 class="card-title">Duration</h3>
+          <p>The sensitivity of a bond's price to changes in its own yield is measured by its duration. Duration increases with maturity, and decreases with the bond's coupon.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <img src="https://static.pexels.com/photos/267582/pexels-photo-267582.jpeg" alt="">
+        <div class="card-content">
+          <h3 class="card-title">Duration hedging</h3>
+          <p>By buying and selling bonds in proportion to their duration we can limit our exposure to any one of the three curve shifts.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+
+  <!-- Section C -->
+  <section id="section-c" class="grid">
+    <div class="content-wrap">
+      <h2 class="content-title">It's easier than you think!</h2>
+      <p>[Put some duration trading maths here.]</p>
+      <p>[And some dynamic charts with simulations here.]</p>
+    </div>
+    <div class='contentYieldCurve'>
+        <!-- /the chart goes here -->
+    </div>
+    
+  </section>
+
+
+  <!-- Grid for table. -->
+  <!--  <div class="grid2">test grid div</div> -->
+  
+
+
+  <!-- Section D -->
+  <section id="section-d" class="grid">
+    <div class="box">
+      <h2 class="content-title">Advanced bond trading - Convexity</h2>
+      <p>The more convex bond always wins.</p>
+      <a href="#section-d" class="btn2">Read More</a>
+    </div>
+    <div class="box">
+      <h2 class="content-title">Exercises</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti, quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in aut suscipit amet temporibus quo?</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer id="main-footer" class="grid">
+  <div>A CCBS-FY project </div>
+  <div>Site created By <a href="http://dgbarr2.github.io" target="_blank">David Barr</a></div>
+</footer>
+  
+
+  <script type="text/javascript" src="regression.min.js"></script>
+  <script type="text/javascript" src="d3.legend.js"></script>
+  <script type="text/javascript" src="scatterchart.js"></script>
+
+  <script src="grid.js" type="text/javascript"></script>
+
+</body>
+
+</html>
