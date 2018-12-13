@@ -123,11 +123,13 @@ p {
 
 /* Section C: This is where the yield curves are.*/
 
-#section-c {
+#section-c, #section-c2  {
   background: #fff;
   color: #333;
   padding: 2em;
 }
+
+
 
 /* Section D / Boxes */
 

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" >
 
+
+
+
+
 <head>
   <meta charset="UTF-8">
-  <title>Foundation Year: CSS Grid Website Layout</title>
+  <title>(KEEP THIS ONE) Foundation Year: CSS Grid Website Layout</title>
   
   
   
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="style.css">
       <style>
 
 
@@ -36,6 +40,16 @@
           
           </style>
           <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+
+          <!-- Mathjax -->
+          <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">-->
+          </script>
+          <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+            processEscapes: true <!-- to allow \$ to produce $ sign -->
+          </script>
   
 </head>
 
@@ -73,17 +87,8 @@
         <div class="card">
           <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="">
           <div class="card-content">
-            <h3 class="card-title">What does 'pricing' mean?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <img src="https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg" alt="">
-          <div class="card-content">
-            <h3 class="card-title">Quadratics</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+            <h3 class="card-title">What does 'asset pricing' mean?</h3>
+            <p>Although asset prices are decided by the parties to a trade we have some methods (called 'models') for deciding what a 'fair' price would be. By 'asset pricing' we mean using these methods to find the 'fair' price.</p>
           </div>
         </div>
       </li>
@@ -91,8 +96,22 @@
         <div class="card">
           <img src="https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="">
           <div class="card-content">
-            <h3 class="card-title">A little integration</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+            <h3 class="card-title">A simple example</h3>
+            <p>The most straightforward example is probably that of a Treasury bill. If the 1-year interest rate is $r_1$ then we should expect the price of a 1-year Treasury bill to be 
+              $p_1 = \frac{100}{1+r_1}$.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <img src="https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">A more advanced example</h3>
+            <p>Asset pricing models can get a bit more complicated! Here's the Black-Scholes option price equation:
+              $p = SN(d_1) - N(d_2)Ke^{-rt}$
+              We do not focus on this one here.
+            </p>
           </div>
         </div>
       </li>
@@ -102,10 +121,9 @@
 <!-- Section A2 -->
 <section id="section-a2" class="grid">
   <div class="content-wrap">
-    <h2 class="content-title">Making money on the yield curve.</h2>
+    <h2 class="content-title">How much should we pay today to receive money in the future?</h2>
     <div class="content-text">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi
-        animi totam, accusantium, ex eius quia, natus quo?</p>
+      <p>This is the key question: If we have a contract that states that 1 year from now whoever owns the contract will receive £100, how much should we expect to be able to sell that contract for today? A related question is "Why could we not get £100 for it today?"</p>
     </div>
   </div>
 </section>
@@ -119,8 +137,8 @@
       <div class="card">
         <img src="https://static.pexels.com/photos/164527/pexels-photo-164527.jpeg" alt="">
         <div class="card-content">
-          <h3 class="card-title">Curve shifts</h3>
-          <p>The curve may change shape, twist or move in parallel to its starting position. The trick is in knowing how to bet on each one of these without having to take risks with the other two.</p>
+          <h3 class="card-title">Delay aversion</h3>
+          <p>It is generally assumed that a £100 to be received 1 year in the future is worth less to us than £100 in hand today. One reason for this is  that the £100 we hold today, unlike the £100 in the future, can be spent at any time during the coming year.</p>
         </div>
       </div>
     </li>
@@ -128,8 +146,8 @@
       <div class="card">
         <img src="https://static.pexels.com/photos/210607/pexels-photo-210607.jpeg" alt="">
         <div class="card-content">
-          <h3 class="card-title">Duration</h3>
-          <p>The sensitivity of a bond's price to changes in its own yield is measured by its duration. Duration increases with maturity, and decreases with the bond's coupon.</p>
+          <h3 class="card-title">Risk aversion</h3>
+          <p>There is usually a risk that the contract will not be honoured. So if a potential buyer can put their £100 in an FSCS-protected bank deposit, even if it pays no interest they are unlikely to want to buy the contract for that amount, given that they might not get anything back.</p>
         </div>
       </div>
     </li>
@@ -137,8 +155,10 @@
       <div class="card">
         <img src="https://static.pexels.com/photos/267582/pexels-photo-267582.jpeg" alt="">
         <div class="card-content">
-          <h3 class="card-title">Duration hedging</h3>
-          <p>By buying and selling bonds in proportion to their duration we can limit our exposure to any one of the three curve shifts.</p>
+          <h3 class="card-title">Combining the aversions</h3>
+          <p>Asset pricing models take account of aversion to both delay and risk. So pricing equations are just mathematical versions of the followng function:
+            $p = f(\mbox{waiting time},\mbox{risk})$
+          </p>
         </div>
       </div>
     </li>
@@ -149,15 +169,33 @@
   <!-- Section C -->
   <section id="section-c" class="grid">
     <div class="content-wrap">
-      <h2 class="content-title">It's easier than you think!</h2>
-      <p>[Put some duration trading maths here.]</p>
-      <p>[And some dynamic charts with simulations here.]</p>
+      <h2 class="content-title">Discounting a safe future payment</h2>
+      <p>If we can invest £k for 1 year at $r_1$% our return (call it $W$) will be:<br><br>
+        $W = k(1+r_1)$ 
+      </p>
+      <p>Similarly, if we have to pay someone $£W$ in a year we can finance this by depositing $£k$ today where: <br><br>
+      \[k = \frac{W}{1+r_1}\]</p>
     </div>
+    
     <div class='contentYieldCurve'>
         <!-- /the chart goes here -->
+        ihabiohbv
     </div>
     
   </section>
+
+<!-- Section C2 -->
+<section id="section-c2" class="grid">
+  <div class="content-wrap">
+    <h2 class="content-title">It's easier than you think!</h2>
+    <p>[Put some duration trading maths here.]</p>
+    <p>[And some dynamic charts with simulations here.]</p>
+  </div>
+  <div class='contentYieldCurve2'>
+      <!-- /the chart goes here -->
+  </div>
+  
+</section>
 
 
   <!-- Grid for table. -->
@@ -189,6 +227,8 @@
   <script type="text/javascript" src="regression.min.js"></script>
   <script type="text/javascript" src="d3.legend.js"></script>
   <script type="text/javascript" src="scatterchart.js"></script>
+
+  <script type="text/javascript" src="scatterchart_2.js"></script>
 
   <script src="grid.js" type="text/javascript"></script>
 
