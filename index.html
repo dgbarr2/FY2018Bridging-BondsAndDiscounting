@@ -138,7 +138,7 @@
         <img src="https://static.pexels.com/photos/164527/pexels-photo-164527.jpeg" alt="">
         <div class="card-content">
           <h3 class="card-title">Delay aversion</h3>
-          <p>It is generally assumed that a £100 to be received 1 year in the future is worth less to us than £100 in hand today. One reason for this is  that the £100 we hold today, unlike the £100 in the future, can be spent at any time during the coming year.</p>
+          <p>It is generally assumed that £100 to be received 1 year in the future is worth less to us than £100 in hand today. One reason for this is  that the £100 we hold today, unlike the £100 in the future, can be spent at any time during the coming year.</p>
         </div>
       </div>
     </li>
@@ -170,11 +170,11 @@
   <section id="section-c" class="grid">
     <div class="content-wrap">
       <h2 class="content-title">Discounting a safe future payment</h2>
-      <p>If we can invest £k for 1 year at $r_1$% our return (call it $W$) will be:<br><br>
-        $W = k(1+r_1)$ 
+      <p>If we can invest £k for 1 year at $r$% our return (call it $W$) will be:<br><br>
+        $W = k(1+r)$ 
       </p>
       <p>Similarly, if we have to pay someone $£W$ in a year we can finance this by depositing $£k$ today where: <br><br>
-      \[k = \frac{W}{1+r_1}\]</p>
+      \[k = \frac{W}{1+r}\]</p>
     </div>
     
     <div class='contentYieldCurve'>
@@ -187,9 +187,11 @@
 <!-- Section C2 -->
 <section id="section-c2" class="grid">
   <div class="content-wrap">
-    <h2 class="content-title">It's easier than you think!</h2>
-    <p>[Put some duration trading maths here.]</p>
-    <p>[And some dynamic charts with simulations here.]</p>
+    <h2 class="content-title">Discounting over 2 years.</h2>
+    <p>If we have a payment due in 2 years we can disount it twice: first from 2 years to 1 year, to give a notional value 1 year from now, the we discount that value back to today.</p>
+    <p>So we get
+      \[k = \frac{1}{1+r} \times \frac{W}{1+r} = \frac{W}{(1+r)^2}\]
+    </p>
   </div>
   <div class='contentYieldCurve2'>
       <!-- /the chart goes here -->
@@ -226,10 +228,12 @@
 
   <script type="text/javascript" src="regression.min.js"></script>
   <script type="text/javascript" src="d3.legend.js"></script>
+  
   <script type="text/javascript" src="scatterchart.js"></script>
-
+  
+<!--
   <script type="text/javascript" src="scatterchart_2.js"></script>
-
+-->
   <script src="grid.js" type="text/javascript"></script>
 
 </body>

@@ -5,8 +5,13 @@ var data = [[.500,2.5], [1.000,3], [1.500,3], [2.000,3.3], [2.500,3.6], [3.000,4
 var data3 = [[.500,2.5], [1.000,3], [1.500,3], [2.000,3.3], [2.500,3.6], [3.000,4], [3.500,4.1], [4.000,6.1], [4.5,8.0], [5,7.2], [5.5,8.3], [6,1.3], [6.5,4.4], [7.0,4.5], [7.5,4.4], [8.000,4.6], [8.500,4.7], [9.000,4.5], [9.500,5.6], [10.000,4.6], [11.000,7.5]];
 
 var margin = {top: 20, right: 80, bottom: 30, left: 250}
-    , width = 960 - margin.left - margin.right
-    , height = 350 - margin.top - margin.bottom;
+var  width = 960 - margin.left - margin.right
+var  height = 350 - margin.top - margin.bottom;
+
+//var margin = {top: 20, right: 80, bottom: 30, left: 250}
+//    , width = 960 - margin.left - margin.right
+//    , height = 350 - margin.top - margin.bottom;
+
 
 var x = d3.scale.linear()
         .domain([0, d3.max(data, function(d) { return d[0]; })])
